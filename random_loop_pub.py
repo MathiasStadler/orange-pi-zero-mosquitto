@@ -82,6 +82,7 @@ class SelectMqttExample:
             # self.client.publish(topic, 'Hello' + str(self.counter)
             self.client.publish(topic,"Hallo" + str(self.counter))
             sleep(0.5)
+            self.counter = self.counter + 1
         print("Disconnected: {}".format(self.disconnected[1]))
 
 
