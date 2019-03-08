@@ -8,9 +8,9 @@ from select import select
 from time import time
 
 client_id = 'paho-mqtt-python/issue72/' + str(uuid.uuid4())
-topic = client_id
+# topic = client_id
+topic = "/test"
 print("Using client_id / topic: " + client_id)
-
 
 class SelectMqttExample:
     def __init__(self):
