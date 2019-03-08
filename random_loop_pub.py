@@ -7,7 +7,7 @@ import uuid
 import paho.mqtt.client as mqtt
 from select import select
 from time import time
-
+from time import sleep
 client_id = 'paho-mqtt-python/issue72/' + str(uuid.uuid4())
 # topic = client_id
 topic = "/test"
@@ -79,11 +79,9 @@ class SelectMqttExample:
         self.counter = 0
         while not self.disconnected[0]:
             print("Publishing")
-            self.client.publish(topic, 'Hello' + str(self.counter)
-                
-            time.sleep(0.5)
-            self.counter = self.counter + 1
-
+            # self.client.publish(topic, 'Hello' + str(self.counter)
+            self.client.publish(topic,"Hallo" + str(self.counter))
+            sleep(0.5)
         print("Disconnected: {}".format(self.disconnected[1]))
 
 
