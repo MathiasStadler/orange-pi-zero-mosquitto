@@ -75,7 +75,7 @@ class SelectMqttExample:
         self.client.connect('127.0.0.1', 1883, 60)
         
 
-        while not client.self.disconnected[0]:
+        while not self.disconnected[0]:
             self.do_select()
 
             if self.state in {0, 2, 4}:
