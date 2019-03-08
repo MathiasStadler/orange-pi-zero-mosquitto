@@ -13,24 +13,20 @@ https://www.youtube.com/watch?v=gU5Vp0zCzak
 sudo apt-get install mosquitto mosquitto-clients
 ```
 
-- install pip
+- install pip and paho-mqtt
 
 ```bash
+# python
 sudo apt-get install python-pip
 pip install --upgrade setuptools
 pip install paho-mqtt==1.3.0
 pip list
 
+#python3
 sudo apt-get install python3-pip
 pip3 install --upgrade setuptools
 pip3 install paho-mqtt==1.3.0
 pip3 list
-```
-
-- install python-mosquitto client via pip
-
-```bash
-sudo pip install paho-mqtt==1.3.0
 ```
 
 ## mosquitto start/start/enable/reenable

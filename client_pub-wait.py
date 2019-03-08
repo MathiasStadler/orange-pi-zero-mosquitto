@@ -65,7 +65,7 @@ mqttc.connect("localhost", 1883, 60)
 mqttc.loop_start()
 
 print("tuple")
-(rc, mid) = mqttc.publish("test", "bar", qos=2)
+(rc, mid) = mqttc.publish("/test", "bar", qos=2)
 print("class")
 infot = mqttc.publish("class", "bar", qos=2)
 
