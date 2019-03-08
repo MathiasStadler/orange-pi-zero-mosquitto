@@ -70,12 +70,12 @@ class SelectMqttExample:
         password="test123"
 
         #Set userid and password
-        client.username_pw_set(userID, password)
+        self.client.username_pw_set(userID, password)
         
         self.client.connect('127.0.0.1', 1883, 60)
         
 
-        while not client.self.disconnected[0]:
+        while not self.client.self.disconnected[0]:
             self.do_select()
 
             if self.state in {0, 2, 4}:
