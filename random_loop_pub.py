@@ -79,10 +79,10 @@ class SelectMqttExample:
         self.counter = 0
         while not self.disconnected[0]:
             print("Publishing")
-            self.client.publish(topic, 'Hello' + counter)
+            self.client.publish(topic, 'Hello' + self.counter)
                 
             time.sleep(0.5)
-            self counter = counter + 1
+            self.counter = self.counter + 1
 
         print("Disconnected: {}".format(self.disconnected[1]))
 
