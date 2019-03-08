@@ -5,6 +5,7 @@
 ```txt
 https://www.mickmake.com/post/mqtt-mosquitto-pi-zero-w-5-minutes-tutorial
 https://www.youtube.com/watch?v=gU5Vp0zCzak
+http://www.steves-internet-guide.com/logging-mqtt-sensor-data-to-sql-database-with-python/
 ```
 
 ## install software
